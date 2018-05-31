@@ -1,11 +1,18 @@
-////////////////////////////// 
+//////////////////////////////
 //  2
 //  Crea un objecto en la variable llamada obj
 //  de tal modo que el siguiente código no muestre por consola 'suspendes'
 
 
 // Aquí tu código
-
+let obj = {
+  a:{
+    b:true,
+    c:[0,1]
+  },
+  d:5,
+  f:'geek'
+}
 // Hasta aquí
 
 // TEST 1
