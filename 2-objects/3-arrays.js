@@ -1,11 +1,15 @@
-////////////////////////////// 
+//////////////////////////////
 //  3
 //  Crea un array en la variable llamada arr
 //  de tal modo que el siguiente código no muestre por consola 'suspendes'
 
 
 // Aquí tu código
-
+let arr = [
+  {name: 'pepito',age:25},
+  {name: 'pepito',age:20},
+  {name: 'Jose',age:18}
+]
 
 // Hasta aquí
 
