@@ -33,3 +33,8 @@ let gente = [{
         edad: 10
     },
 ]
+var personasInicialJ = [];
+for(let persona of gente){
+  if(persona.nombre[0] === 'J'){personasInicialJ.push(persona)}
+}
+console.log(personasInicialJ);
