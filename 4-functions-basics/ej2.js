@@ -7,14 +7,17 @@
 // Ha de pasar los test adjuntados.
 let convierteString = (numero) => {
     // Aquí tu código.  Desde aquí:
-
-    
+    if(typeof numero === 'number'){
+        return numero.toString();
+    }else{
+        return 'Debo ser ejecutada con un numero'
+    }
     // Hasta aquí.
 }
 
 
 let test = require('../test.js');
-//  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput) 
+//  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput)
 // comprueba si: convierteString(1) === '1'
 test(convierteString, [1], '1');
 test(convierteString, [0], '0');
