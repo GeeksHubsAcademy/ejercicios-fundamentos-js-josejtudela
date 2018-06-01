@@ -1,9 +1,9 @@
-////////////////////////////// 
+//////////////////////////////
 //  6
 //  Crea un array nuevo llamado dobleArr
 //  cada item ha de ser el doble de cada item del array llamado arr
 //  ejemplo:  arr = [1,2]  ;   dobleArr = [2,4];
-//  En cada ejecución arr será distinto pero sus item siempre serán tipo 'number' 
+//  En cada ejecución arr será distinto pero sus item siempre serán tipo 'number'
 //  de tal modo que el siguiente código no muestre por consola 'suspendes'
 
 //  PISTA: utilizad un bucle for of
@@ -16,7 +16,7 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 console.log('El array original es:  arr =', arr);
 // Aquí tu código
 
-
+let dobleArr = arr.map(number=>number*2);
 
 
 // Hasta aquí
