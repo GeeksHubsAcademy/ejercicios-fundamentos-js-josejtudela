@@ -1,13 +1,19 @@
-////////////////////////////// 
+//////////////////////////////
 //  8
 //  Crear una función llamada convierteEurosEnPesetas
-//  igual a la del ejercicio anterior 
+//  igual a la del ejercicio anterior
 //  pero además debe lanzar un error si no recibe un tipo number
 //  Debes lanzar un error con la sentencia:
 //  throw new Error('convierteEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+let convierteEurosEnPesetas = moneda => {
+  if(typeof moneda === 'number'){
+    return moneda*168;
+  }else{
+    throw new Error('convierteEurosEnPesetas debe recibir un number');
+  }
+}
 // Hasta aquí
 
 
@@ -38,8 +44,8 @@ try {
     convierteEurosEnPesetas();
     convierteEurosEnPesetas('1');
     console.log('suspendes: convierteEurosEnPesetas debe lanzar un error si no recibe un número');
-    
+
 } catch (error) {
     console.log('apruebas');
-        
+
 }
