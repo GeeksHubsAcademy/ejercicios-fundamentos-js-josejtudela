@@ -2,7 +2,7 @@
 
 // Debe hacer los mismo que la función del ejercicio 7 y además:
 
-// si la función recibe un numero de 
+// si la función recibe un numero de
 // inicio mayor que el de final debe funcionar igual, sumando los enteros entre ellos.
 // para ello deberemos hacer un bucle en descenso.
 // utilizad un bucle for (let i = hasta; i <= desde; i++ ) {}
@@ -12,7 +12,19 @@
 let sumaDesdeHasta = (desde, hasta) => {
     let sumatorio = 0;
     // Aquí tu código.  Desde aquí:
-
+    if(typeof desde === 'number' && typeof hasta === 'number'){
+      if(desde <= hasta){
+        for (let i = desde; i <= hasta; i++ ) {
+          sumatorio += i;
+        }
+      }else{
+        for (let i = desde; i >= hasta; i-- ) {
+          sumatorio += i;
+        }
+      }
+    }else{
+      throw new Error('Debo recibir números');
+    }
     // Hasta aquí.
     return sumatorio;
 }
