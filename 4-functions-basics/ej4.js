@@ -9,16 +9,22 @@
 // Ha de pasar los test adjuntados.
 
 let ultimoCaracter = (texto) => {
-    // Aquí tu código.  Desde aquí:
-  
-
-
+    // Aquí tu código.  Desde aquí
+    if(typeof texto === 'string'){
+      if(texto === ""){
+        return 'Debo ser ejecutada con un string no vacío'
+      }else{
+        return texto[texto.length-1];
+      }
+    }else{
+      return 'Debo ser ejecutada con un string'
+    }
     // Hasta aquí.
 }
 
 
 let test = require('../test.js');
-//  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput) 
+//  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput)
 // comprueba si: ultimoCaracter('juan') === 'n'
 test(ultimoCaracter, ['juan'], 'n');
 test(ultimoCaracter, ['Hola'], 'a');
