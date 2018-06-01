@@ -8,14 +8,17 @@
 
 let cuentaCaracteres = (texto) => {
     // Aquí tu código.  Desde aquí:
-   
-    
+    if(typeof texto === 'string'){
+      return texto.length;
+    }else{
+      return 'Debo ser ejecutada con un string'
+    }
     // Hasta aquí.
 }
 
 
 let test = require('../test.js');
-//  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput) 
+//  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput)
 // comprueba si: cuentaCaracteres('juan') === 4
 test(cuentaCaracteres, ['juan'], 4);
 test(cuentaCaracteres, ['Hola'], 4);
